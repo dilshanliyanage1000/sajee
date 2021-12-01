@@ -23,6 +23,11 @@
             color: rgb(163, 111, 14);
         }
 
+        .active {
+            background-color: rgb(255, 223, 163);
+            color: rgb(156, 104, 6);
+        }
+
         #navigation_bar {
             width: 100%;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
@@ -101,6 +106,19 @@
         #form_submit_button:hover {
             background-image: linear-gradient(rgb(221, 170, 75), rgb(253, 210, 130));
         }
+
+        #contact_us {
+            font-family: Garamond;
+            background-image: linear-gradient(rgb(253, 210, 130), rgb(221, 170, 75));
+            margin-right: -20px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border: none;
+        }
+
+        #contact_us:hover {
+            background-image: linear-gradient(rgb(221, 170, 75), rgb(253, 210, 130));
+        }
     </style>
 
 </head>
@@ -111,7 +129,7 @@
     <div id="navigation_bar">
         <a class="logo_tabs" href="index.html">SeaSide Lodge</a>
         <a class="navbar_tabs" href="index.html">Home</a>
-        <a class="navbar_tabs" href="about_us.html">About Us</a>
+        <a class="navbar_tabs active" href="about_us.html">About Us</a>
         <a class="navbar_tabs" href="contact_us.html">Contact Us</a>
     </div>
     <!-- NAVIGATION BAR -->
@@ -119,7 +137,6 @@
     <!-- MAIN BODY CONTENT -->
     <div class="body_content">
 
-        <!-- MAIN BANNER WITH DESCRIPTION -->
         <br>
         <h1 style="text-align: center; font-size: 45px;">Let us introduce ourselves!</h1>
 
@@ -180,9 +197,51 @@
             </div>
         </div>
 
-        <!-- MAIN BANNER WITH DESCRIPTION -->
+        <br>
+        <h1 style="text-align: center; font-size: 45px;">And because you mean everything to us...</h1>
+        <p id="hotel_intro_caption">
+            We provide so many complimentaries to make your time, worth your while!
+        </p>
 
-        <!-- END SECTION -->
+        <div class="row" style="text-align: center;">
+            <div style="width: 33.33%;">
+                <div style="padding: 50px;">
+                    <img src="img/offers_1.png" alt="Offers #1" style="width: 50%;">
+                    <br>
+                    <h2>Special Offers</h2>
+                    <p>We welcome everyone to visit us and make memories. And to make it even more exciting, we provide
+                        discounts and special 'first-time coupons' and many along the way!</p>
+                </div>
+            </div>
+            <div style="width: 33.33%;">
+                <div style="padding: 50px;">
+                    <img src="img/offers_2.png" alt="Offers #2" style="width: 50%;">
+                    <br>
+                    <h2>Complimentaries</h2>
+                    <p>Don't forget to use your coupon to grab a free complimentary beverage at the beach lounge with
+                        every reservation!</p>
+                </div>
+            </div>
+            <div style="width: 33.33%;">
+                <div style="padding: 50px;">
+                    <img src="img/offers_3.png" alt="SeaSide Lodge #6" style="width: 50%;">
+                    <br>
+                    <h2>Spa & Massages</h2>
+                    <p>Book 'Hot Stone Massage' and get an exciting 65% off on your second pick for your loved one! </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <h1 style="text-align: center; font-size: 45px;">Stay in touch for our latest updates!</h1>
+        <div style="text-align: center;">
+            <a href="contact_us.html">
+                <button id="contact_us" type="button">
+                    <h2 style="color: rgb(92, 63, 10);">Subscribe to our newsletter!</h2>
+                </button>
+            </a>
+        </div>
+
     </div>
     <!-- MAIN BODY CONTENT -->
 
