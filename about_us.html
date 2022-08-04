@@ -11,7 +11,7 @@
         body {
             margin: 0;
             font-family: Garamond;
-            color: rgb(80, 54, 6);
+            color: #503606;
         }
 
         .row {
@@ -20,27 +20,41 @@
 
         h1,
         h2 {
-            color: rgb(163, 111, 14);
+            color: #a36f0e;
         }
 
         .active {
-            background-color: rgb(255, 223, 163);
-            color: rgb(156, 104, 6);
+            background-color: #ffdfa3;
+            color: #9c6806;
+        }
+
+        .float-right {
+            float: right;
         }
 
         #navigation_bar {
             width: 100%;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 4px 4px 0 #0000001a;
             position: fixed;
             overflow: hidden;
-            background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+            background-image: linear-gradient(#ffffff, #ffffff);
         }
 
-        .logo_tabs,
+        .logo_tabs {
+            float: left;
+            text-align: center;
+            color: #9c6806;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
         .navbar_tabs {
             float: left;
             text-align: center;
-            color: rgb(156, 104, 6);
+            color: #9c6806;
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 20px;
@@ -50,15 +64,14 @@
         }
 
         .navbar_tabs:hover {
-            background-image: linear-gradient(rgb(253, 210, 130), rgb(221, 170, 75));
-            color: rgb(84, 55, 2);
+            background-image: linear-gradient(#fdd282, #ddaa4b);
+            color: #543702;
             ;
         }
 
         .body_content {
             padding-top: 3rem;
             margin-bottom: 100px;
-            text-align: center;
         }
 
         #hotel_intro_caption {
@@ -70,46 +83,17 @@
         }
 
         #footer {
-            background-color: rgb(255, 243, 220);
+            background-color: #fff3dc;
         }
 
         .quick_access {
             text-decoration: none;
-            color: rgb(21, 87, 107);
-        }
-
-        .input_text_style {
-            width: 100%;
-            margin-top: 5px;
-            padding: 10px;
-        }
-
-        input[type="text"] {
-            font-family: Garamond;
-            font-size: 20px;
-        }
-
-        span {
-            color: red;
-            font-size: 15px;
-        }
-
-        #form_submit_button {
-            font-family: Garamond;
-            background-image: linear-gradient(rgb(253, 210, 130), rgb(221, 170, 75));
-            margin-right: -20px;
-            padding-left: 35px;
-            padding-right: 35px;
-            border: none;
-        }
-
-        #form_submit_button:hover {
-            background-image: linear-gradient(rgb(221, 170, 75), rgb(253, 210, 130));
+            color: #15576b;
         }
 
         #contact_us {
             font-family: Garamond;
-            background-image: linear-gradient(rgb(253, 210, 130), rgb(221, 170, 75));
+            background-image: linear-gradient(#fdd282, #ddaa4b);
             margin-right: -20px;
             padding-left: 35px;
             padding-right: 35px;
@@ -117,7 +101,7 @@
         }
 
         #contact_us:hover {
-            background-image: linear-gradient(rgb(221, 170, 75), rgb(253, 210, 130));
+            background-image: linear-gradient(#ddaa4b, #fdd282);
         }
     </style>
 
@@ -127,10 +111,16 @@
 
     <!-- NAVIGATION BAR -->
     <div id="navigation_bar">
-        <a class="logo_tabs" href="index.html">SeaSide Lodge</a>
+        <a class="logo_tabs" href="index.html">
+            <img src="img/Logo.png" alt="Logo" style="width: 180px;" />
+        </a>
         <a class="navbar_tabs" href="index.html">Home</a>
         <a class="navbar_tabs active" href="about_us.html">About Us</a>
         <a class="navbar_tabs" href="contact_us.html">Contact Us</a>
+
+        <div class="float-right">
+            <a class="navbar_tabs" href="sign_in.php">Login</a>
+        </div>
     </div>
     <!-- NAVIGATION BAR -->
 

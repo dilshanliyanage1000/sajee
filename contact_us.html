@@ -24,23 +24,37 @@
         }
 
         .active {
-            background-color: rgb(255, 223, 163);
-            color: rgb(156, 104, 6);
+            background-color: #ffdfa3;
+            color: #9c6806;
+        }
+
+        .float-right {
+            float: right;
         }
 
         #navigation_bar {
             width: 100%;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 4px 4px 0 #0000001a;
             position: fixed;
             overflow: hidden;
-            background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+            background-image: linear-gradient(#ffffff, #ffffff);
         }
 
-        .logo_tabs,
+        .logo_tabs {
+            float: left;
+            text-align: center;
+            color: #9c6806;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
         .navbar_tabs {
             float: left;
             text-align: center;
-            color: rgb(156, 104, 6);
+            color: #9c6806;
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 20px;
@@ -114,16 +128,22 @@
 
     <!-- NAVIGATION BAR -->
     <div id="navigation_bar">
-        <a class="logo_tabs" href="index.html">SeaSide Lodge</a>
+        <a class="logo_tabs" href="index.html">
+            <img src="img/Logo.png" alt="Logo" style="width: 180px;" />
+        </a>
         <a class="navbar_tabs" href="index.html">Home</a>
         <a class="navbar_tabs" href="about_us.html">About Us</a>
         <a class="navbar_tabs active" href="contact_us.html">Contact Us</a>
+
+        <div class="float-right">
+            <a class="navbar_tabs" href="sign_in.php">Login</a>
+        </div>
     </div>
     <!-- NAVIGATION BAR -->
 
     <!-- MAIN BODY CONTENT -->
     <div class="body_content">
-        
+
         <br>
         <h1 style="text-align: center; font-size: 45px;">Feel free to contact us anytime!</h1>
 
@@ -135,7 +155,7 @@
             Please Fill out the form below and we will get in touch with you soon.
             You could also reach out to us directly through any of our hotline numbers!
         </p>
-        
+
         <div style="background-color: rgb(255, 243, 220); padding-top: 10px; padding-bottom: 40px;">
             <h1 style="text-align: center;">Don't hesitate to subscribe to our newsletter!</h1>
             <p id="hotel_intro_caption">
