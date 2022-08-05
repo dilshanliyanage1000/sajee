@@ -1,122 +1,116 @@
-<!DOCTYPE html>
-<html>
+<?php
+include_once("header.php");
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SeaSide Lodge</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Garamond;
+        color: #503606;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Garamond;
-            color: #503606;
-        }
+    .row {
+        display: flex;
+    }
 
-        .row {
-            display: flex;
-        }
+    h1,
+    h2 {
+        color: #a36f0e;
+    }
 
-        h1,
-        h2 {
-            color: #a36f0e;
-        }
+    .active {
+        background-color: #ffdfa3;
+        color: #9c6806;
+    }
 
-        .active {
-            background-color: #ffdfa3;
-            color: #9c6806;
-        }
+    .float-right {
+        float: right;
+    }
 
-        .float-right {
-            float: right;
-        }
+    #navigation_bar {
+        width: 100%;
+        box-shadow: 0 4px 4px 0 #0000001a;
+        position: fixed;
+        overflow: hidden;
+        background-image: linear-gradient(#ffffff, #ffffff);
+    }
 
-        #navigation_bar {
-            width: 100%;
-            box-shadow: 0 4px 4px 0 #0000001a;
-            position: fixed;
-            overflow: hidden;
-            background-image: linear-gradient(#ffffff, #ffffff);
-        }
+    .logo_tabs {
+        float: left;
+        text-align: center;
+        color: #9c6806;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
-        .logo_tabs {
-            float: left;
-            text-align: center;
-            color: #9c6806;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            text-decoration: none;
-            font-size: 20px;
-        }
+    .navbar_tabs {
+        float: left;
+        text-align: center;
+        color: #9c6806;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
-        .navbar_tabs {
-            float: left;
-            text-align: center;
-            color: #9c6806;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            text-decoration: none;
-            font-size: 20px;
-        }
+    .navbar_tabs:hover {
+        background-image: linear-gradient(#fdd282, #ddaa4b);
+        color: #543702;
+        ;
+    }
 
-        .navbar_tabs:hover {
-            background-image: linear-gradient(#fdd282, #ddaa4b);
-            color: #543702;
-            ;
-        }
+    .body_content {
+        padding-top: 3rem;
+        margin-bottom: 100px;
+    }
 
-        .body_content {
-            padding-top: 3rem;
-            margin-bottom: 100px;
-        }
+    #hotel_intro_caption {
 
-        #hotel_intro_caption {
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        font-size: 20px;
+    }
 
-            padding-left: 100px;
-            padding-right: 100px;
-            text-align: center;
-            font-size: 20px;
-        }
+    #footer {
+        background-color: #fff3dc;
+    }
 
-        #footer {
-            background-color: #fff3dc;
-        }
+    .quick_access {
+        text-decoration: none;
+        color: #15576b;
+    }
 
-        .quick_access {
-            text-decoration: none;
-            color: #15576b;
-        }
+    #contact_us {
+        font-family: Garamond;
+        background-image: linear-gradient(#fdd282, #ddaa4b);
+        margin-right: -20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border: none;
+    }
 
-        #contact_us {
-            font-family: Garamond;
-            background-image: linear-gradient(#fdd282, #ddaa4b);
-            margin-right: -20px;
-            padding-left: 35px;
-            padding-right: 35px;
-            border: none;
-        }
-
-        #contact_us:hover {
-            background-image: linear-gradient(#ddaa4b, #fdd282);
-        }
-    </style>
-
-</head>
+    #contact_us:hover {
+        background-image: linear-gradient(#ddaa4b, #fdd282);
+        cursor: pointer;
+    }
+</style>
 
 <body>
 
     <!-- NAVIGATION BAR -->
     <div id="navigation_bar">
-        <a class="logo_tabs" href="index.html">
+        <a class="logo_tabs" href="index.php">
             <img src="img/Logo.png" alt="Logo" style="width: 180px;" />
         </a>
-        <a class="navbar_tabs" href="index.html">Home</a>
-        <a class="navbar_tabs active" href="about_us.html">About Us</a>
-        <a class="navbar_tabs" href="contact_us.html">Contact Us</a>
+        <a class="navbar_tabs" href="index.php">Home</a>
+        <a class="navbar_tabs active" href="about_us.php">About Us</a>
+        <a class="navbar_tabs" href="contact_us.php">Contact Us</a>
 
         <div class="float-right">
             <a class="navbar_tabs" href="sign_in.php">Login</a>
@@ -223,11 +217,11 @@
         </div>
 
         <br>
-        <h1 style="text-align: center; font-size: 45px;">Stay in touch for our latest updates!</h1>
+        <h1 style="text-align: center; font-size: 45px;">Feel free to inquire about your stay!</h1>
         <div style="text-align: center;">
-            <a href="contact_us.html">
+            <a href="contact_us.php">
                 <button id="contact_us" type="button">
-                    <h2 style="color: rgb(92, 63, 10);">Subscribe to our newsletter!</h2>
+                    <h2 style="color: rgb(92, 63, 10);">Contact Us For Inquiries</h2>
                 </button>
             </a>
         </div>
@@ -246,9 +240,9 @@
             <div style="width: 33.33%; padding-right: 20px;">
                 <h3>Quick Access</h3>
                 <hr>
-                <a class="quick_access" href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                <a class="quick_access" href="about_us.html">About Us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                <a class="quick_access" href="contact_us.html">Contact Us</a>
+                <a class="quick_access" href="index.php">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a class="quick_access" href="about_us.php">About Us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a class="quick_access" href="contact_us.php">Contact Us</a>
                 <br>
                 <hr>
                 <h3>Follow us on,</h3>
@@ -257,9 +251,7 @@
                 <a class="quick_access" href="tripadvisor.com">TripAdvisor</a>
             </div>
             <div style="width: 33.33%; padding: 20px;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44816.045436893815!2d79.86231363883002!3d6.864674363852212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bb5a5074501%3A0x10abff02ca9d350f!2sColombo%2006%2C%20Colombo!5e0!3m2!1sen!2slk!4v1638261998253!5m2!1sen!2slk"
-                    style="width:100%; border:3px solid #eee;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44816.045436893815!2d79.86231363883002!3d6.864674363852212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bb5a5074501%3A0x10abff02ca9d350f!2sColombo%2006%2C%20Colombo!5e0!3m2!1sen!2slk!4v1638261998253!5m2!1sen!2slk" style="width:100%; border:3px solid #eee;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>

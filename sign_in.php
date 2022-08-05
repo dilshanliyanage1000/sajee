@@ -95,10 +95,10 @@ if (isset($_POST['username'])) {
 
             <br>
 
-            <label for="username"><b>Username</b></label>
+            <label for="username"><h2>Username</h2></label>
             <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
-            <label for="password"><b>Password</b></label>
+            <label for="password"><h2>Password</h2></label>
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
             <button type="submit">Login</button>
